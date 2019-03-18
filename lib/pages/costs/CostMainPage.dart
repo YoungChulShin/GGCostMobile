@@ -64,7 +64,7 @@ class _CostMainPageState extends State<CostMainPage> with SingleTickerProviderSt
                       style: TextStyle(fontSize: GGFontSize.fontSizeRegular))
                   ),
                   Tab(
-                    child: Text('주간',
+                    child: Text('주간', 
                       style: TextStyle(fontSize: GGFontSize.fontSizeRegular))
                   ),
                   Tab(
