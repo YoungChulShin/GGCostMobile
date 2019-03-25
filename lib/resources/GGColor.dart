@@ -10,4 +10,7 @@ class GGColor {
 
   static Color appBarHeaderTitle = Colors.black;
   static Color mainBackground = Colors.white;
+
+  static Color incomeFontColor = Colors.blue;
+  static Color expenseFontColor = Colors.red;
 }
