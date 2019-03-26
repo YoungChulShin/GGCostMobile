@@ -28,38 +28,24 @@ class CostItem {
 class _CostItemListPage extends State<CostItemListPage> {
 
   List<CostItem> costItems = [
-    CostItem(CostType.income, DateTime.now(), '테스트1', '카테고리1', '부 카테고리1', 12.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-    CostItem(CostType.income, DateTime.now(), '테스트2', '카테고리2', '부 카테고리2', 44.0),
-
+    CostItem(CostType.income, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
+    CostItem(CostType.expense, DateTime.now(), '호식이 2마리 치킨', '식비', '저녁', 123456),
   ];
 
   @override 
@@ -68,8 +54,35 @@ class _CostItemListPage extends State<CostItemListPage> {
       itemCount: costItems.length,
       itemBuilder: (BuildContext context, int index) {
         return Padding(
-          padding: EdgeInsets.all(0),
-          child: Text(costItems[index].costName),
+          padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Container(
+                width: 80.0,
+                child: Text('08/12(월)', 
+                  style: TextStyle(fontSize: GGFontSize.fontSizeRegular, fontWeight: FontWeight.bold)),
+              ),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(costItems[index].costName, 
+                      style: TextStyle(fontSize: GGFontSize.fontSizeRegular)),
+                    Text('${costItems[index].category} / ${costItems[index].subCategory}', 
+                      style: TextStyle(fontSize: GGFontSize.fontSizeSmall, color: GGColor.mainColorGrey))
+                  ],
+                ),
+              ),
+              Text('${costItems[index].costMoney.toString()}원', 
+                style: TextStyle(
+                  fontSize: GGFontSize.fontSizeRegular, 
+                  color: (costItems[index].costType == CostType.income) ? 
+                    GGColor.incomeFontColor : 
+                    GGColor.expenseFontColor))
+            ],
+          )
         );
       },
     );

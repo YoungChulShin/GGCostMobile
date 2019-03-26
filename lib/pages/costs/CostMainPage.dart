@@ -85,15 +85,9 @@ class _CostMainPageState extends State<CostMainPage> with SingleTickerProviderSt
                 child: TabBarView(
                   controller: tabController,
                   children: <Widget>[
-                    Container(
-                      height: 50,
-                      color: GGColor.mainColorGrey,
-                    ),
+                    CostDetailPage(CostViewType.daily),
                     CostDetailPage(CostViewType.weekly),
-                    Container(
-                      height: 50, 
-                      color: GGColor.mainColorYellow,
-                    ),
+                    CostDetailPage(CostViewType.monthly),
                     CostDetailPage(CostViewType.calendar),
                     ],
                   ),

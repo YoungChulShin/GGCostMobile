@@ -16,6 +16,22 @@ class CostDetailPage extends StatefulWidget {
 
 class _CostDetailPageState extends State<CostDetailPage> {
 
+  String getInquiryDurationString(CostViewType costViewType) {
+    if (costViewType ==CostViewType.daily) {
+      return '2019.03.19(월)';
+    }
+    else if (costViewType == CostViewType.weekly) {
+      return '2019.03.19(월) ~ 2019.03.25(일)';
+    }
+    else if (costViewType == CostViewType.monthly) {
+      return '2019.03';
+    }
+    else {
+      return '';
+    }
+  }
+  
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -30,12 +46,18 @@ class _CostDetailPageState extends State<CostDetailPage> {
                   // 금액 정보 Widget
                   children: <Widget>[
                     // 날짜 뒤로 가기 버튼
-                    Icon(Icons.chevron_left),
+                    IconButton(
+                      icon: Icon(Icons.chevron_left),
+                      iconSize: 30.0,
+                      onPressed: () {
+
+                      },
+                    ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         // 조회 기간
-                        Text('2019.03.19(월) ~ 2019.03.26(일)', style: TextStyle(fontWeight: FontWeight.bold, fontSize: GGFontSize.fontSizeMedium),),
+                        Text(getInquiryDurationString(widget.costViewType), style: TextStyle(fontWeight: FontWeight.bold, fontSize: GGFontSize.fontSizeMedium),),
                         SizedBox(height: 15.0),
                         // 총 비용
                         Row(
@@ -49,12 +71,12 @@ class _CostDetailPageState extends State<CostDetailPage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end, 
                           children: <Widget>[
-                            Text('수입(4)', style: TextStyle(fontSize: GGFontSize.fontSizeRegular, color: GGColor.mainColorGrey)),
+                            Text('수입(4)', style: TextStyle(fontSize: GGFontSize.fontSizeRegular, color: GGColor.mainColorBlack)),
                             Container(
                               width: 150.0,
                               child: Text('394,839 원',
                                 textAlign: TextAlign.end,
-                                style: TextStyle(fontSize: GGFontSize.fontSizeRegular, color: GGColor.mainColorGrey),
+                                style: TextStyle(fontSize: GGFontSize.fontSizeRegular, color: GGColor.mainColorBlack),
                               ),
                             )
                           ],
@@ -64,12 +86,12 @@ class _CostDetailPageState extends State<CostDetailPage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end, 
                           children: <Widget>[
-                            Text('지출(4)', style: TextStyle(fontSize: GGFontSize.fontSizeRegular, color: GGColor.mainColorGrey)),
+                            Text('지출(4)', style: TextStyle(fontSize: GGFontSize.fontSizeRegular, color: GGColor.mainColorBlack)),
                             Container(
                               width: 150.0,
                               child: Text('443,443,434,839 원',
                                 textAlign: TextAlign.end,
-                                style: TextStyle(fontSize: GGFontSize.fontSizeRegular, color: GGColor.mainColorGrey),
+                                style: TextStyle(fontSize: GGFontSize.fontSizeRegular, color: GGColor.mainColorBlack),
                               ),
                             )
                           ],
@@ -77,15 +99,14 @@ class _CostDetailPageState extends State<CostDetailPage> {
                       ],
                     ),
                     // 날짜 앞으로 가기 버튼
-                    Icon(Icons.chevron_right),
-                    /*
-                    IconButton( 
-                      icon: Image.asset('assets/images/arrow_forward.png'),
+                    //Icon(Icons.chevron_right),
+                    IconButton(
+                      icon: Icon(Icons.chevron_right),
+                      iconSize: 30.0,
                       onPressed: () {
 
                       },
                     ),
-                    */
                   ],
                 ),
               ],
